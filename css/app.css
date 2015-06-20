@@ -1,0 +1,152 @@
+@font-face {
+	font-family: "ThirstyScriptMedium";
+	src: url(../fonts/ThirstyScriptExtraBoldDemo.otf);
+}
+
+@font-face {
+	font-family: "YummyCupcakes";
+	src: url(../fonts/YummyCupcakes.ttf);
+}
+
+@font-face {
+	font-family: "Merienda-Regular.ttf";
+	src: url(../fonts/Merienda-Regular);
+}
+
+
+
+
+body {
+	font-size: 16px;
+	margin: auto;
+}
+
+
+.banner {
+
+	background-color: #006480;
+	text-align: center;
+	border-bottom: black solid 8px;
+
+}
+
+.banner:after 
+
+.tagline {
+
+	text-align: center; 
+}
+
+header h6 {
+
+	color: #eb174f;
+	text-decoration: italic;
+	font-family: "Merienda-Regular";
+	font-size: 25px;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 40px;
+
+}
+
+
+/*links in nav bar, in different active states*/
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+
+nav li {
+
+	font-family: "Merienda-Regular.ttf";
+	color: white;
+	padding: 0;
+	margin-right: 15px;
+	display: inline-block;
+	font-size: 25px;
+	text-decoration: none;
+	text-align: center;
+}
+
+
+.home_button {
+	font-family: "YummyCupcakes";
+	background: #eb174f;
+	width: 200px;
+	padding: 15px;
+	color: white;
+
+}
+
+nav a:hover {
+
+	color: lightblue;
+}
+
+nav a {
+	text-decoration: none;
+	color: orange;
+}
+
+nav {
+	border-bottom: #FFFFF3 solid 1px;
+
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*End of Nav link styles*/
+
+.container {
+	background: #fef2df;
+	margin: auto;
+	margin-top: 0;
+	text-align: center;
+	padding-top: 50px;
+}
+.craving {
+	color: blue;
+	text-align: center;
+	padding: 20px;
+	font-size: 22px;
+	margin-top: 0;
+}
+
+.fact {
+	float: left;
+	background-color: white;
+
+}
+
+.pic {
+	float: right;
+	background-color: white;
+	border: black solid 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
