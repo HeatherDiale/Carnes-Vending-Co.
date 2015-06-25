@@ -19,8 +19,17 @@
 body {
 	font-size: 16px;
 	margin: auto;
+    color: black;
+    font-size: 16px;
+    background-color: antiquewhite;
 }
 
+h1,
+header,
+h6,
+p {
+    color:black;
+}
 
 .banner {
 
@@ -37,6 +46,27 @@ body {
 	text-align: center; 
 }
 
+.snack_container {
+    background-image: url("../images/payrange.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-color: 'offwhite';
+    margin: auto;
+    padding: 30px;
+}
+
+
+.warm_message {
+    border: black solid 2px;
+    text-align: center;
+    margin: auto;
+    padding: 100px;
+    background-color: antiquewhite;
+    color: aquamarine;
+    text-align: center;
+}
+
 header h6 {
 
 	color: #eb174f;
@@ -48,6 +78,18 @@ header h6 {
 	padding-bottom: 40px;
 
 }
+div .main_headline {
+    color: black;
+    text-align: center;
+    background-color: beige;
+}
+
+.hungry_headline {
+    float: left;
+    text-align: center;
+    color: black;
+}
+
 
 
 /*links in nav bar, in different active states*/
