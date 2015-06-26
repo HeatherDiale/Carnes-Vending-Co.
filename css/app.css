@@ -13,30 +13,18 @@
 	src: url(../fonts/Merienda-Regular);
 }
 
-
-
-
 body {
-	font-size: 16px;
-	margin: auto;
-    color: black;
-    font-size: 16px;
-    background-color: antiquewhite;
-}
-
-h1,
-header,
-h6,
-p {
-    color:black;
+    background-color: whitesmoke;
 }
 
 .banner {
 
 	background-color: #006480;
+    background-image: url("../images/girl_machine.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 	text-align: center;
-	border-bottom: black solid 8px;
-
+	border-bottom: white solid 8px;
 }
 
 .banner:after 
@@ -44,27 +32,6 @@ p {
 .tagline {
 
 	text-align: center; 
-}
-
-.snack_container {
-    background-image: url("../images/payrange.png");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    background-color: 'offwhite';
-    margin: auto;
-    padding: 30px;
-}
-
-
-.warm_message {
-    border: black solid 2px;
-    text-align: center;
-    margin: auto;
-    padding: 100px;
-    background-color: antiquewhite;
-    color: aquamarine;
-    text-align: center;
 }
 
 header h6 {
@@ -78,10 +45,44 @@ header h6 {
 	padding-bottom: 40px;
 
 }
-div .main_headline {
-    color: black;
+
+    .headline_container {
+    background-color: #006480;
+}
+
+.main_headline_1 {
+    color: orange;
+    font: "Merienda-Regular";
     text-align: center;
-    background-color: beige;
+    font-size: 40px;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.main_headline {
+    color: #c9e1f5;
+    font: "Merienda-Regular";
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+
+.message_container {
+    border-bottom: white solid 5px;
+    background-color: #006480;
+/*    *background-image: url("../images/mom_pop.jpg");*/
+    text-align: center;
+   /* background-repeat: no-repeat;*/
+    padding: 25px 0 40px 0;
+}
+
+.warm_message {
+    text-align: center;
+    margin: auto;
+    color: #c9e1f5;
+    text-stroke: 1px black;
+    font-size: 40px;
+    font: "Merienda-Regular";  
 }
 
 .hungry_headline {
