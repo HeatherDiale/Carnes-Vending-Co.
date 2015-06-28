@@ -186,10 +186,10 @@ background-color: #006480;
 }
 
 .snack_button {
-    text-decoration: none;
-    display: inline-block;
-    background-color: lightgreen;
+    background-color: darkgreen;
     padding: 20px;
+    margin-left: 100px;
+    margin-top: 50px;
     border: darkgreen solid 2px;
 }
 
@@ -204,6 +204,49 @@ background-color: #006480;
     padding: 30px 0 15px 15px;
 
 }
+.payrange_container {
+    background-color: #006480;
+    background-image: url(../images/payrange_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .90;
+    text-align: center;
+    border-top: #006480 solid 20px;
+    border-bottom: #006480 solid 20px;
+}
+
+.payrange_text {
+    font-size: 60px;
+    color: #eb174f;
+    padding: 200px 0 20px 0;
+    text-align: center;
+    text-shadow:
+    3px 3px 0 #000,
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
+}
+
+.payrange_text_2 {
+    color: white;
+    padding: 0 0px 50px 0;
+    text-align: center;
+    text-shadow:
+    3px 3px 0 #000,
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
+}
+
+.payrange_button {
+    background-color: darkgreen;
+    text-align: center;
+    padding-right: 100px;
+
+}
+
 
 
 
