@@ -13,6 +13,11 @@
 	src: url(../fonts/Merienda-Regular);
 }
 
+@font-face {
+    font-family: "Apple Garamond Light Regular.ttf;
+    src: url(../fonts/Apple Garamond Light Regular);
+}
+
 .row.full-width {
     width: 100%;
     max-width: 100%;
@@ -96,31 +101,30 @@ header h6 {
 	color: #eb174f;
     background-color: whitesmoke;
 	text-decoration: italic;
-	font-family: "Merienda-Regular";
-	font-size: 40px;
+	font-family: "Apple Garamond Light Regular";
+	font-size: 25px;
 	padding-bottom: 40px;
-    text-stroke: black 5px;
-    text-emphasis: bold;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
 }
 
 .headline_container {
-background-color: #006480;
+    background-color: #006480;
+    padding:0px;
 }
 
 .main_headline_1 {
-    color: orange;
+    color: #eb174f;
     font: "Merienda-Regular";
     text-align: center;
-    font-size: 40px;
-    margin: 0;
+    font-size: 60px;
+    margin-top: 25px;
     padding-top: 20px;
 }
 
 .main_headline {
-    color: #c9e1f5;
+    color: orange;
     font: "Merienda-Regular";
     text-align: center;
     font-size: 40px;
@@ -148,7 +152,7 @@ background-color: #006480;
     background-position: center;
     background-image: url(../images/mom_pop.jpg);
     background-attachment: fixed;
-    height: 600px;
+    height: 700px;
 }
 
 .snack_container {
@@ -307,9 +311,71 @@ background-color: #006480;
 }
 
 
+/* Beginning of Who We Are page*/
 
+.banner_about {
+    background-image: url(../images/awards_wall.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.tagline_about {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
 
+/*Beginning of Find Your Snack page*/
+
+.banner_snack {
+    background-image: url(../images/find_your_snack_banner.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: .80;
+}
+
+.tagline_snack {
+    margin-bottom: 100px;
+    margin-top: 100px;
+
+}
+
+.decisions {
+    text-align: center;
+    padding-left: 10px;
+}
+
+.promotions_container {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-top: #eb174f solid 2px;
+    border-bottom: #eb174f solid 2px;
+
+}
+
+.promotion_headline {
+    color: #eb174f;
+}
+
+.promotions_container h3, h2 {
+    color: #006480;
+}
+
+.todays_snack{
+    text-align: center;
+    color: orange;
+    padding-top: 30px;
+}
+
+.product_input {
+    text-align: center;
+    color: orange;
+}
+
+.promotion_description {
+    text-align: center;
+    color: orange;
+    padding-top: 30px;
+}
 
 
 
