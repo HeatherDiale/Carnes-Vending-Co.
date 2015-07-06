@@ -101,12 +101,11 @@ header h6 {
 	color: #eb174f;
     background-color: whitesmoke;
 	text-decoration: italic;
+    text-align: center;
 	font-family: "Apple Garamond Light Regular";
 	font-size: 25px;
-	padding-bottom: 40px;
-    padding: 0;
-    margin-bottom: 40px;
-
+    margin-bottom: 60px;
+    margin-top: 30px;
 }
 
 .headline_container {
@@ -210,7 +209,7 @@ header h6 {
 }
 .payrange_container {
     background-color: #006480;
-    background-image: url(../images/payrange_background.jpg);
+    background-image: url(../images/payrange_banner_image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .90;
@@ -345,30 +344,45 @@ header h6 {
 }
 
 .promotions_container {
-    padding-top: 40px;
     padding-bottom: 20px;
-    border-top: #eb174f solid 2px;
-    border-bottom: #eb174f solid 2px;
+    border-top: #006480 solid 5px;
+    border-bottom: #006480 solid 5px;
 
 }
 
-.promotion_headline {
-    color: #eb174f;
+.promo_headline_container {
+    padding: none;
+    margin: auto;
 }
 
-.promotions_container h3, h2 {
-    color: #006480;
+.try_this {
+    color: orange;
+    border-bottom: solid 1px #006480;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+.promotions_container h2 {
+    color: cadetblue;
+
+
 }
 
 .todays_snack{
     text-align: center;
-    color: orange;
+    color: white;
+;
     padding-top: 30px;
 }
 
 .product_input {
     text-align: center;
     color: orange;
+}
+
+.promotion_image {
+    margin-top: 15px;
 }
 
 .promotion_description {
@@ -378,11 +392,84 @@ header h6 {
 }
 
 
+.payrange_ad_container {
+    background-image: url(../images/payrange_ad_image.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .80;
+
+}
+
+.payrange_ad_container h3 {
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.snack_app_container {
+    background-image: url(../images/snack_background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-bottom: #006480 solid 5px;
+}
+
+.instructions_container {
+    background-color: rgba(250,235,215,0.9);
+    color: #006480;
+    margin: auto;
+}
+
+
+.instructions_container h3 {
+    color:#eb174f;
+
+}
+
+.craving_headline {
+    padding-top: 100px;
+    text-align: center
+}
 
 
 
+.number_1 {
+    list-style-image: url(../images/number_1.png);
+    padding-top: 50px;
+    color: #006480;
+    text-align: center;
+}
+
+.number_2 {
+    list-style-image: url(../images/number_2.png);
+    color:#006480;
+    padding-top: 50px;
+    padding-bottom: 300px;
+    text-align: center;
+
+}
 
 
+/* Begining designs for the Contact page */
+
+.banner_contact {
+    background-image: url(../images/fort_knox_building.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.tagline_contact {
+    margin: auto;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.headline_contact {
+    text-align: center;
+    margine-lef: 40px;
+}
 
 
 
