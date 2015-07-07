@@ -441,6 +441,11 @@ header h6 {
     text-align: center;
 }
 
+.location_dropdown {
+    margin-top: 30px;
+    background-color: green;
+}
+
 .number_2 {
     list-style-image: url(../images/number_2.png);
     color:#006480;
@@ -457,6 +462,7 @@ header h6 {
     background-image: url(../images/fort_knox_building.png);
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom: #006480 solid 3px;
 
 }
 
@@ -471,6 +477,32 @@ header h6 {
     margine-lef: 40px;
 }
 
+.background_form {
+    background-image: url(../images/fort_knox_employees_bw.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.form_container {
+    background-color: rgba(250,235,215,0.6);
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.form {
+    background-color: rgba(0,100,128,.50);
+    text-align: left;
+    padding: 20px;
+
+}
+
+.form label {
+    color: white;
+    font-family: "Helvetica", "Georgia", sans-serif;
+    padding: 5px;
+}
 
 
 
