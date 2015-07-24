@@ -40,40 +40,30 @@
 
 .tagline {
 
-	text-align: center; 
-    text-stroke: black 2px;
+	text-align: center;
 }
 
-.nav_bar {
-    background-color: #006480;
-}
+.top_bar {
+    background-color: lavender;
 
-ul {
-	padding: 0;
-	margin: 0;
 }
-
 
 nav li {
 
 	font-family: "Merienda-Regular.ttf";
-	color: white;
-	padding: 0;
-	margin-right: 15px;
+    padding: 15px 10px 15px 10px;
 	display: inline-block;
 	font-size: 25px;
 	text-decoration: none;
-	text-align: center;
 }
 
 
 .home_button {
-
 	background: #eb174f;
 	width: 200px;
-	padding: 15px;
+	padding: 25px 25px 25px 5px;
+    margin: 0;
 	color: white;
-
 }
 
 nav a:hover {
@@ -83,12 +73,7 @@ nav a:hover {
 
 nav a {
 	text-decoration: none;
-	color: orange;
-}
-
-nav {
-	border-bottom: #FFFFF3 solid 1px;
-
+	color: darkorange;
 }
 
 .clearfix:after {
@@ -216,7 +201,6 @@ header h6 {
     text-align: center;
     border-top: #006480 solid 20px;
     border-bottom: #006480 solid 5px;
-    margin-bottom: 60px;
 }
 
 .payrange_text {
@@ -252,61 +236,28 @@ header h6 {
 }
 
 .footer_container {
-    border-top: black solid 1px;
+    background-color: #006480;
+    opacity: 80%;
 }
 
-.logo {
-    font-size: 40px;
-    color: #006480;
-    font-family: "YummyCupcakes";
-    margin-top: 30px;
-    margin: auto;
-    text-align: center;
-}
 
 .bottom_nav_container {
-    margin: auto;
-    border-top:black solid 1px;
-}
+    padding-top: 40px;
 
-.bottom_nav {
-    margin: 40px;
-}
-
-.bottom_nav li {
-    font-size: 16px;
-    border: none;
 }
 
 .bottom_nav a {
+    text-align: center;
     color: orange;
-}
-
-.info_container {
-    margin-top: 30px;
-}
-
-.facebook_container h4 {
-    color: black;
+    padding: 0px;
+    margin: auto;
     font-size: 18px;
-    padding-top: 30px;
-    margin-bottom: 0;
-}
-
-.address_container h4 {
-    font-size: 20px;
-    color: black;
-    padding-left: 20px;
-}
-
-.name_container h4 {
-    color: black;
-    font-size: 16px;
 }
 
 .rights {
     font-size: 12px;
     color: grey;
+    padding-bottom: 40px;
 }
 
 
