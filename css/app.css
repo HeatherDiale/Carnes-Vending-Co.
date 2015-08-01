@@ -30,7 +30,6 @@
     background-attachment: fixed;
     background-image: url("../images/retro_machine.jpg");
     background-repeat: no-repeat;
-    opacity: .80;
     background-size: cover;
 	text-align: center;
 	border-bottom: white solid 8px;
@@ -264,14 +263,19 @@ header h6 {
 /* Beginning of Who We Are page*/
 
 .banner_about {
-    background-image: url(../images/awards_wall.png);
+    background-image: url(../images/about_banner.png);
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 1400px 1100px;
+}
+
+.heading_about {
+    margin-bottom: 100px;
+     text-align: center;
 }
 
 .tagline_about {
-    margin-top: 50px;
-    margin-bottom: 30px;
+
 }
 
 /*Beginning of Find Your Snack page*/
