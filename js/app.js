@@ -3,9 +3,10 @@ $(document).ready(function() {
         var scrollDistance = $(window).scrollTop();
 
         if (scrollDistance > 83){
-            $(".top-bar, .nav_bar").css("background-color", "#006480");
+            // Remove opacity class
+            $('.top-bar, .nav_bar').addClass('fully-opaque');
         } else {
-            $(".top-bar, .nav_bar").css("background", "rgba(230,230,250, .80)");
+            $('.top-bar, .nav_bar').removeClass('fully-opaque');
         }
 
     });
