@@ -11,3 +11,17 @@ $(document).ready(function() {
 
     });
 });
+
+ $(document).ready(function() {
+    $(window).scroll(function(e) {
+        var scrollDistance = $(window).scrollTop();
+
+        if (scrollDistance > 2500) {
+            //Bring in warm_message from left //
+            $('.mom_pop_div').addClass('slide_left');
+        }else{
+            $('.mom_pop_div').removeClass('slide_left');
+        }
+    });
+});
+//

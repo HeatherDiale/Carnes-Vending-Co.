@@ -28,7 +28,7 @@
 
 	background-color: #006480;
     background-attachment: fixed;
-    background-image: url("../images/retro_machine_bw.jpg");
+    background-image: url("../images/retro_machine_altered.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 	text-align: center;
@@ -36,8 +36,8 @@
 }
 
 .tagline_home_container {
-    background-color: rgba(240, 144, 55, 0.25);
-    margin-top: 70px;
+    /*background-color: rgba(240, 144, 55, 0.4);*/
+    margin-top: 90px;
 }
 
 .tagline {
@@ -82,6 +82,12 @@ nav a:hover {
 nav a {
 	text-decoration: none;
 	color: darkorange;
+     text-shadow:
+           0px 1px 0 #000,
+            1px 2px 0 #000,
+          1px 1px 0 #000,
+          1px 1px 0 #000,
+           1px 1px 0 #000;
 }
 
 .clearfix:after {
@@ -91,19 +97,34 @@ nav a {
 
 header h6 {
 
-	color: #eb174f;
-    background-color: whitesmoke;
-	text-decoration: italic;
+	color: #fff;
+    /*background-color: rgba(245, 245, 245, .7);*/
     text-align: center;
 	font-family: "Apple Garamond Light Regular";
-	font-size: 25px;
+	font-size: 40px;
     margin-bottom: 60px;
     margin-top: 30px;
+    text-shadow:
+           3px 3px 0 #000,
+            -1px -1px 0 #000,
+          3px -1px 0 #000,
+          -2px 2px 0 #000,
+           2px 2px 0 #000;
 }
 
 .headline_container {
-    background-color: #006480;
-    padding:0px;
+    /*background-color: rgba(0, 100, 128, .7);*/
+    margin-top: 300px;
+    margin_bottom: 300px;
+}
+
+.headline_container h1, h2, p {
+    text-shadow:
+    3px 3px 0 #000,
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
 }
 
 .main_headline_1 {
@@ -134,18 +155,103 @@ header h6 {
     text-align: center;
     margin: auto;
     color: #c9e1f5;
-    text-stroke: 1px black;
-    font-size: 40px;
-    font: "Merienda-Regular";  
+    font-size: 22px;
+    font: "Merienda-Regular";
+    padding: 20px
 }
+/* Begin Slide-in for all taglines*/
+
+div.slide-right h6 {
+  width:100%;
+  overflow:hidden;
+}
+div.slide-right h6 {
+  animation: slide-right 3s;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: 150%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* End of Slide in for taglines*/
 
 .mom_pop_div {
     background: no-repeat;
     background-position: center;
     background-image: url(../images/mom_pop.jpg);
-    background-attachment: fixed;
     height: 700px;
 }
+
+.slide-left {
+
+div.headline_container {
+  overflow:hidden;
+}
+div.headline_container h1 {
+  animation: slide-left 2s;
+    position: relative;
+}
+
+@keyframes slide-left {
+  from {
+    left: -600px;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+
+div.headline_container {
+  overflow:hidden;
+}
+div.headline_container h2 {
+  animation: slide-right 2s;
+    animation-delay: 1s;
+    position: relative;
+}
+
+@keyframes slide-right {
+  from {
+    right: -600px;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+div.headline_container {
+  overflow:hidden;
+}
+div.headline_container p {
+  animation: slide-left 2s;
+    animation-delay: 1s;
+    position: relative;
+}
+
+@keyframes slide-left {
+  from {
+    left: -600px;
+    midth: 200%
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+}
+
 
 .snack_container {
     background-color: #fef2df;
@@ -202,6 +308,7 @@ header h6 {
 }
 .payrange_container {
     background-color: #006480;
+    background-attachment: fixed;
     background-image: url(../images/payrange_banner_image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -275,15 +382,19 @@ header h6 {
     background-image: url(../images/about_banner.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 1400px 1100px;
+    background-size: 1350px 1100px;
 }
 
 .heading_about {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
      text-align: center;
 }
 
 .tagline_about {
+    padding-top: 80px;
+}
+
+.stop_center {
 
 }
 
@@ -293,11 +404,11 @@ header h6 {
     background-image: url(../images/find_your_snack_banner.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    background-attachment: fixed;
     opacity: .80;
 }
 
 .tagline_snack {
-    margin-bottom: 100px;
     margin-top: 100px;
 
 }
@@ -443,14 +554,15 @@ header h6 {
     background-image: url(../images/fort_knox_building.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     border-bottom: #006480 solid 3px;
 
 }
 
 .tagline_contact {
     margin: auto;
-    padding-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 100px;
+    margin-bottom: 30px;
 }
 
 .headline_contact {
@@ -528,6 +640,7 @@ header h6 {
     background-image: url(../images/payrange_banner_image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 
