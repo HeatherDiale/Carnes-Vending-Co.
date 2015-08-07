@@ -190,16 +190,44 @@ div.slide-right h6 {
     height: 700px;
 }
 
-.slide-left {
 
 div.headline_container {
   overflow:hidden;
 }
+
 div.headline_container h1 {
-  animation: slide-left 2s;
-    position: relative;
+  position: relative;
+  transition: left 2s;
+  left: -700px;
 }
 
+div.headline_container h2 {
+  position: relative;
+  transition: right 1s 2s;
+  right: -600px;
+}
+
+div.headline_container p {
+  position: relative;
+  transition: left 1s 3s;
+  left: -700px;
+}
+
+.slide_left div.headline_container h1 {
+  left: 0;
+}
+
+.slide_left div.headline_container h2 {
+  right: 0;
+}
+
+.slide_left div.headline_container p {
+  left: 0;
+}
+
+
+
+/*
 @keyframes slide-left {
   from {
     left: -600px;
@@ -220,7 +248,7 @@ div.headline_container h2 {
     position: relative;
 }
 
-@keyframes slide-right {
+/*@keyframes slide-right {
   from {
     right: -600px;
   }
@@ -250,8 +278,7 @@ div.headline_container p {
   }
 }
 
-}
-
+*/
 
 .snack_container {
     background-color: #fef2df;
