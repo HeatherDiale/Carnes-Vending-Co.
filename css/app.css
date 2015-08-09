@@ -524,9 +524,10 @@ div.headline_container p {
 }
 
 .instructions_container {
-    background-color: rgba(250,235,215,0.9);
+    background-color: rgba(250,235,215,0.7);
     color: #006480;
     margin: auto;
+    padding-bottom: 200px;
 }
 
 
@@ -537,7 +538,13 @@ div.headline_container p {
 
 .craving_headline {
     padding-top: 100px;
-    text-align: center
+    text-align: center;
+      text-shadow:
+           0px 1px 0 #000,
+            1px 2px 0 #000,
+          1px 1px 0 #000,
+          1px 1px 0 #000,
+           1px 1px 0 #000;
 }
 
 
@@ -547,6 +554,12 @@ div.headline_container p {
     padding-top: 50px;
     color: #006480;
     text-align: center;
+      text-shadow:
+           0px 1px 0 #000,
+            1px 2px 0 #000,
+          1px 1px 0 #000,
+          1px 1px 0 #000,
+           1px 1px 0 #000;
 }
 
 .location_dropdown {
@@ -560,19 +573,28 @@ div.headline_container p {
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
+      text-shadow:
+           0px 1px 0 #000,
+            1px 2px 0 #000,
+          1px 1px 0 #000,
+          1px 1px 0 #000,
+           1px 1px 0 #000;
 
 }
 
 .icon_container {
-    padding-bottom: 200px;
+    background-color: darkgreen;
+    padding: 0;
 }
 
 .icon_container li {
     display: block;
+
 }
 
 .icon_container img {
     padding: 0;
+    border: black 2px solid;
 }
 
 /* Begining designs for the Contact page */
