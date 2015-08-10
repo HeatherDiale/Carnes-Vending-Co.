@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/foundation.css">
   <link rel="stylesheet" href="../css/app.css">
+  <link rel="stylesheet" type="text/css" href="../js/vendor/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="../js/vendor/slick/slick-theme.css"/>
 
   <script src="../js/vendor/modernizr.js"></script>
 
@@ -40,20 +42,21 @@
     <div class="row">
         <div class="large-12 columns promotions_container">
             <div class="promo_headline_container">
-                <img src="../images/websight_typography/try_this_suggestive_headline.png" class="try_this large-6 columns large-offset-3"></img>
+                <h1 class="try_this large-12 columns">Try This, We Think You<span>'</span>ll Love It<span>!</span></h1>
             </div>
-
-            <div class="large-4 columns">
-                <h3 class="large-12 columns todays_snack">Today's Snack Is:</h3>
-                <div class="row">
-                    <h1 class="large-12 columns product_input">The PayDay!</h1>
+            <div class="slick_container">
+                <div class="large-4 columns">
+                    <h3 class="large-12 columns todays_snack">Today's Snack Is:</h3>
+                    <div class="row">
+                        <h1 class="large-12 columns product_input">The PayDay!</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="large-4 columns">
-                <img src="../images/promotion_image.jpeg" class="promotion_image">
-            </div>
-            <div class="large-4 columns">
-                <p class="promotion_description">It's Friday!<br>And it's time to get paid!<br>Start your weekend off right<br> with a RICH treat!<br> You've EARNED it!</p>
+                <div class="large-4 columns">
+                    <img src="../images/promotion_image.jpeg" class="promotion_image">
+                </div>
+                <div class="large-4 columns">
+                    <p class="promotion_description">It's Friday!<br>And it's time to get paid!<br>Start your weekend off right<br> with a RICH treat!<br> You've EARNED it!</p>
+                </div>
             </div>
         </div>
     </div>
@@ -181,5 +184,7 @@
     $(document).foundation();
   </script>
   <script src="../js/app.js"></script>
+  <script type="text/javascript" src="../js/vendor/slick/slick.min.js"></script>
+
 </body>
 </html>

@@ -32,7 +32,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 	text-align: center;
-	border-bottom: white solid 8px;
 }
 
 .tagline_home_container {
@@ -226,7 +225,6 @@ div.headline_container p {
 }
 
 
-
 /*
 @keyframes slide-left {
   from {
@@ -286,19 +284,48 @@ div.headline_container p {
 
 }
 
+h1.hungry_headline {
+    padding-top: 70px;
+}
+
+h2.hungry_headline {
+    color: #006480;
+    font-size: 50px;
+}
+
 .hungry_headline {
     color: #eb174f;
+    font-family: "Merienda-Regular.ttf";
     text-align: center;
-    padding-top: 70px;
-    font-size: 50px;
+    font-size: 70px;
       text-shadow:
     3px 3px 0 #000,
    -1px -1px 0 #000,
     1px -1px 0 #000,
    -1px  1px 0 #000,
     1px  1px 0 #000;
-
 }
+
+h1.hungry_headline  {
+    overflow: hidden;
+}
+
+h1.hungry_headline {
+  position: relative;
+  transition: left 1s;
+  left: 600px;
+}
+
+h1.hungry_headline.slide_left {
+  left: 0;
+}
+
+.find_snack_tagline {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
 
 .sorting_grid_image {
     padding: 0;
@@ -334,9 +361,8 @@ div.headline_container p {
 
 .snack_button {
     background-color: darkgreen;
-    padding: 20px;
-    margin-top: 50px;
-    border: darkgreen solid 2px;
+    margin-top: 20px;
+    margin-bottom: 70px;
 }
 
 .ordered_list_container {
@@ -358,7 +384,7 @@ div.headline_container p {
     background-size: cover;
     opacity: .90;
     text-align: center;
-    border-top: #006480 solid 20px;
+    border-top: #006480 solid 5px;
     border-bottom: #006480 solid 5px;
 }
 
@@ -476,10 +502,24 @@ div.headline_container p {
 
 .try_this {
     color: orange;
+    font-size: 40px;
+    font-family: "ThirstyScriptMedium";
     border-bottom: solid 1px #006480;
     text-align: center;
     padding: 20px;
     margin: auto;
+    text-shadow:
+            0px 1px 0 #000,
+            1px 2px 0 #000,
+            1px 1px 0 #000,
+            1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+
+.try_this span {
+    font-family: "Merienda-Regular.ttf";
+    font-size: 55px;
+    padding-left: 3px;
 }
 
 .promotions_container h2 {
@@ -491,13 +531,24 @@ div.headline_container p {
 .todays_snack{
     text-align: center;
     color: #006480;
-;
+    text-shadow:
+           0px 1px 0 #000,
+            1px 2px 0 #000,
+          1px 1px 0 #000,
+          1px 1px 0 #000,
+           1px 1px 0 #000;
     padding-top: 30px;
 }
 
 .product_input {
     text-align: center;
     color: orange;
+    text-shadow:
+           0px 1px 0 #000,
+            1px 2px 0 #000,
+          1px 1px 0 #000,
+          1px 1px 0 #000,
+           1px 1px 0 #000;
 }
 
 .promotion_image {
@@ -508,6 +559,12 @@ div.headline_container p {
     text-align: center;
     color: #006480;
     padding-top: 30px;
+    text-shadow:
+            0px 1px 0 #000,
+            1px 1px 0 #000,
+            1px 1px 0 #000,
+            1px 1px 0 #000,
+            1px 1px 0 #000;
 }
 
 
@@ -555,7 +612,7 @@ div.headline_container p {
 
 .craving_headline {
     font-family: "ThirstyScriptMedium";
-    font-size: 60px;
+    font-size: 50px;
     color: #eb174F;
     padding-top: 100px;
     text-align: center;
@@ -570,7 +627,7 @@ div.headline_container p {
 .craving_headline span {
     font-family: "Merienda-Regular.ttf";
     padding-left: 3px;
-    font-size: 40px;
+    font-size: 55px;
 }
 
 
@@ -579,7 +636,7 @@ div.headline_container p {
     padding-top: 50px;
     padding-left: 5px;
     margin-left: 3px;
-    color: #006480;
+    color: orange;
       text-shadow:
            0px 1px 0 #000,
             1px 2px 0 #000,
@@ -595,7 +652,7 @@ div.headline_container p {
 
 .number_2 {
     list-style-image: url(../images/number_2.png);
-    color:#006480;
+    color: orange;
     padding-top: 50px;
     padding-left: 5px;
     padding-bottom: 50px;
