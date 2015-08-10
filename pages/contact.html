@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/foundation.css">
   <link rel="stylesheet" href="../css/app.css">
+  <link rel="stylesheet" href="../css/style.css">
 
   <script src="../js/vendor/modernizr.js"></script>
 
@@ -39,55 +40,64 @@
     <div class="row full-width">
         <div class="large-12 columns background_form">
             <div class="row">
-                <div class="form_container large-10 columns large-offset-1">
+            <div class="form_container large-10 columns large-offset-1">
                 <div class="row">
                     <div class=" form large-6 columns large-centered large-offset-3">
-                    <div class="row">
-                        <div class="large-12 columns">
-                        <h3>Suggestions, Comments, Concerns?<br> Tell us about it.</h3>
-                        <form action="/my-handling-form-page" method="post">
-                        <div class="row full-width">
-                            <div class="large-12 columns center">
-                                <label for="name">First Name:</label>
-                                <input type="text" id="name"/>
-                            </div>
-                        </div>
-                         <div class="row full-width">
+                        <div id="form-messages"></div>
+                        <div class="row">
                             <div class="large-12 columns">
-                                <label for="name">Last Name:</label>
-                                <input type="text" id="name"/>
+                                    <h3>Suggestions, Comments, Concerns?<br> Tell us about it.</h3>
+
+                                    <form id="ajax-contact" method="post" action="mailer.php">
+
+                                    <div class="row full-width">
+                                        <div class="large-12 columns center field">
+                                            <label for="name">Name:</label>
+                                            <input type="text" id="name" name="name" required>
+                                        </div>
+                                    </div>
+
+                                     <div class="row full-width">
+                                        <div class="large-12 columns center field">
+                                            <label for="tel">Phone:</label>
+                                            <input type="tel" id="phone" name="phone" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="row full-width">
+                                        <div class="large-12 columns center field">
+                                            <label for="email">Email:</label>
+                                            <input type="email" id="email" name="email" required>
+                                        </div>
+                                    </div>
+
+                                     <div class="row full-width">
+                                        <div class="large-12 columns center field">
+                                            <label for="button">Nearest Breakroom</label>
+                                            <input type="select" id="select" name="breakroom_button">
+                                        </div>
+                                    </div>
+
+                                    <div class="row full-width">
+                                        <div class="large-12 columns center field">
+                                             <label for="msg">Message:<br> How can we better serve you?</label>
+                                            <textarea id="message" name="message" required></textarea>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                                <div class="row full-width">
+                                    <div class="large-5 columns large-offset-4">
+                                        <a href="#" class="button contact_button">Send Message</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row full-width">
-                            <div class="large-12 columns">
-                                <label for="mail">E-mail:</label>
-                                <input type="email" id="mail" />
-                            </div>
-                        </div>
-                        <div class="row full-width">
-                            <div class="large-12 columns">
-                                <label for="tel">Phone:</label>
-                                <input type="tel" id="tel" />
-                            </div>
-                        </div>
-                        <div class="row full-width">
-                            <div class="large-12 columns">
-                                <label for="msg">Message:<br> How can we better serve you?</label>
-                                <textarea id="msg"></textarea>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="row full-width">
-                        <div class="large-5 columns large-offset-4">
-                            <a href="#" class="button contact_button">Send Message</a>
                         </div>
                     </div>
                 </div>
-                    </div>
             </div>
-                </div>
         </div>
-            </div>
         <div class="row">
             <div class="large-12 columns">
                 <div class="row">
