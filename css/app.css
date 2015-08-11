@@ -186,7 +186,8 @@ div.slide-right h6 {
     background: no-repeat;
     background-position: center;
     background-image: url(../images/mom_pop.jpg);
-    height: 700px;
+    padding-bottom: 25px;
+
 }
 
 
@@ -210,6 +211,7 @@ div.headline_container p {
   position: relative;
   transition: left 1s 3s;
   left: -700px;
+
 }
 
 .slide_left div.headline_container h1 {
@@ -223,60 +225,6 @@ div.headline_container p {
 .slide_left div.headline_container p {
   left: 0;
 }
-
-
-/*
-@keyframes slide-left {
-  from {
-    left: -600px;
-  }
-
-  to {
-    left: 0;
-  }
-}
-
-
-div.headline_container {
-  overflow:hidden;
-}
-div.headline_container h2 {
-  animation: slide-right 2s;
-    animation-delay: 1s;
-    position: relative;
-}
-
-/*@keyframes slide-right {
-  from {
-    right: -600px;
-  }
-
-  to {
-    right: 0;
-  }
-}
-
-div.headline_container {
-  overflow:hidden;
-}
-div.headline_container p {
-  animation: slide-left 2s;
-    animation-delay: 1s;
-    position: relative;
-}
-
-@keyframes slide-left {
-  from {
-    left: -600px;
-    midth: 200%
-  }
-
-  to {
-    left: 0;
-  }
-}
-
-*/
 
 .snack_container {
     background-color: #fef2df;
@@ -464,9 +412,48 @@ h1.hungry_headline.slide_left {
     padding-top: 80px;
 }
 
-.stop_center {
+.road_container {
+    background-image: url(../images/winding_road.jpg);
+    background-attachment: fixed;
 
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: solid #006480 3px;
 }
+
+.map_intro_container {
+    rgba(250,235,215, 1);
+}
+
+.been_everywhere {
+    color: #eb174f;
+    margin-top: 50px;
+    font-family: "Merienda-Regular.ttf";
+    text-align: center;
+    font-size: 50px;
+      text-shadow:
+    2px     2px 0 #000,
+    1px     1px 0 #000,
+    1px     1px 0 #000,
+    1px     1px 0 #000,
+    1px     1px 0 #000;
+}
+
+.everywhere_p {
+    text-shadow: none;
+    text-align: center;
+    font-family: "Merienda-Regular.ttf";
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.route_image {
+    margin-bottom: 100px;
+    border: solid 4px #006480;
+    padding: 0;
 
 /*Beginning of Find Your Snack page*/
 
