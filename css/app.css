@@ -412,20 +412,21 @@ h1.hungry_headline.slide_left {
     padding-top: 80px;
 }
 
+/*Begining of About page- timeline section*/
 .road_container {
     background-image: url(../images/winding_road.jpg);
     background-attachment: fixed;
-
     background-repeat: no-repeat;
     background-size: cover;
     border-top: solid #006480 3px;
 }
 
 .map_intro_container {
-    rgba(250,235,215, 1);
+
 }
 
-.been_everywhere {
+
+.map_intro_container h1 {
     color: #eb174f;
     margin-top: 50px;
     font-family: "Merienda-Regular.ttf";
@@ -450,10 +451,26 @@ h1.hungry_headline.slide_left {
     margin-bottom: 50px;
 }
 
-.route_image {
+.route_container {
+    background-image: url(../images/route_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
     margin-bottom: 100px;
     border: solid 4px #006480;
-    padding: 0;
+    padding-bottom: 300px;
+}
+
+.map_pin {
+    position: relative;
+    z-index: 2;
+}
+
+.map_pin_1 {
+    top: 25px;
+    left: 190px;
+}
+
 
 /*Beginning of Find Your Snack page*/
 

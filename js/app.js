@@ -7,7 +7,7 @@ $(document).ready(function() {
         if (scrollDistance > 83){
             // Remove opacity class
             $('.top-bar, .nav_bar').addClass('fully-opaque');
-        } else {
+        }else{
             $('.top-bar, .nav_bar').removeClass('fully-opaque');
         }
 
@@ -34,7 +34,6 @@ $(document).ready(function() {
  $(document).ready(function() {
     $(window).scroll(function(e) {
         var scrollDistance = $(window).scrollTop();
-
         if (scrollDistance > 300) {
             //Bring in warm_message from left //
             $('h1.hungry_headline').addClass('slide_left');
@@ -44,3 +43,15 @@ $(document).ready(function() {
     });
 });
 
+// Code for Popovers on timeline
+
+
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+
+});
+
+$(document).ready(function(){
+    $('[data-toggle="popover_2"]').popover();
+
+});
