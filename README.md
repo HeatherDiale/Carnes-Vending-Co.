@@ -4,6 +4,7 @@ Vending website to display products, help customers find product location, and f
 Carnes Vending Co. is the head vending company located at Ft. Knox. They keep about 35 vending machines filled across 6 different buildings, and were wanting a way for regular customers to know what machine to go to based on what snack they'd like to purchase.  I've built a site that will not only promote their business with fun things such as, product promos, give-aways, and fun facts; but will also link the website to PayRange, allowing  customers to be able to pay from their phones. 
 
 There will be an interactive feature that asks customers what they are craving and provides categories (healthy, crunchy, salty, etc..) that can be clicked to sort all possible products based on their personal preferences. 
+
 Here's a quick look at what the website has to offer: 
 
 ![screen shot 2015-09-26 at 2 28 44 pm](https://cloud.githubusercontent.com/assets/1750325/10119167/6c96402e-645c-11e5-88ef-cdad8dbf2277.png)
