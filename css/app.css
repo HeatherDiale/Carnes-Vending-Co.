@@ -486,6 +486,7 @@ h1.hungry_headline.slide_left {
 
 .tagline_snack {
     margin-top: 100px;
+    padding-right: 70px;
 
 }
 
@@ -563,14 +564,11 @@ h1.hungry_headline.slide_left {
 
 .promotion_description {
     text-align: center;
+    font-size: 22px;
     color: #006480;
     padding-top: 30px;
-    text-shadow:
-            0px 1px 0 #000,
-            1px 1px 0 #000,
-            1px 1px 0 #000,
-            1px 1px 0 #000,
-            1px 1px 0 #000;
+    text-shadow: none;
+
 }
 
 
@@ -639,10 +637,7 @@ h1.hungry_headline.slide_left {
 
 .number_1 {
     list-style-image: url(../images/number_1.png);
-    padding-top: 50px;
-    padding-left: 5px;
-    margin-left: 3px;
-    color: orange;
+    margin-top: 15px;
       text-shadow:
            0px 1px 0 #000,
             1px 2px 0 #000,
@@ -658,10 +653,9 @@ h1.hungry_headline.slide_left {
 
 .number_2 {
     list-style-image: url(../images/number_2.png);
-    color: orange;
-    padding-top: 50px;
-    padding-left: 5px;
     padding-bottom: 50px;
+    margin-top: 15px;
+    padding-left: 15px;
       text-shadow:
            0px 1px 0 #000,
             1px 2px 0 #000,
