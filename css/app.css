@@ -153,11 +153,11 @@ header h6 {
 
 .warm_message {
     text-align: center;
-    margin: auto;
     color: #c9e1f5;
     font-size: 22px;
     font: "Merienda-Regular";
-    padding: 20px
+    padding: 20px;
+    margin-bottom: 30px;
 }
 /* Begin Slide-in for all taglines*/
 
@@ -186,6 +186,7 @@ div.slide-right h6 {
 .mom_pop_div {
     background: no-repeat;
     background-position: center;
+    background-size: cover;
     background-image: url(../images/mom_pop.jpg);
     padding-bottom: 25px;
 
@@ -198,20 +199,20 @@ div.headline_container {
 
 div.headline_container h1 {
   position: relative;
-  transition: left 2s;
-  left: -700px;
+  transition: left 1s;
+  left: -900px;
 }
 
 div.headline_container h2 {
   position: relative;
-  transition: right 1s 2s;
-  right: -600px;
+  transition: right 1s 1s;
+  right: -900px;
 }
 
 div.headline_container p {
   position: relative;
-  transition: left 1s 3s;
-  left: -700px;
+  transition: left 1s 2s;
+  left: -900px;
 
 }
 
@@ -400,9 +401,9 @@ h1.hungry_headline.slide_left {
 .banner_about {
     background-image: url(../images/about_banner.png);
     background-attachment: fixed;
-    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 1330px 1100px;
+    background-size: cover;
+
 }
 
 .heading_about {
