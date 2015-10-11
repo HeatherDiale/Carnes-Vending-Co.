@@ -448,6 +448,7 @@ h1.hungry_headline.slide_left {
 }
 
 .everywhere_p {
+    background-color: rgba(0,100,128,.7);
     text-shadow: none;
     text-align: center;
     font-family: "Merienda-Regular.ttf";
@@ -657,7 +658,6 @@ h1.hungry_headline.slide_left {
 .number_2 {
     list-style-image: url(../images/number_2.png);
     padding-bottom: 50px;
-    margin-top: 15px;
     padding-left: 15px;
       text-shadow:
            0px 1px 0 #000,
