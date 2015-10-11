@@ -313,6 +313,9 @@ h1.hungry_headline.slide_left {
     background-color: darkgreen;
     margin-top: 20px;
     margin-bottom: 70px;
+    color: white;
+    padding: 10px;
+
 }
 
 .ordered_list_container {
@@ -369,6 +372,7 @@ h1.hungry_headline.slide_left {
     margin-bottom: 200px;
 
 }
+
 
 .footer_container {
     background-color: #006480;
@@ -645,10 +649,9 @@ h1.hungry_headline.slide_left {
           1px 1px 0 #000,
            1px 1px 0 #000;
 }
-
-.location_dropdown {
-    margin-top: 30px;
-    background-color: green;
+.locations_button:hover {
+    background-color: darkgreen;
+    color: white;
 }
 
 .number_2 {
