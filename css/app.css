@@ -500,25 +500,11 @@ h1.hungry_headline.slide_left {
     padding-left: 10px;
 }
 
-.promotions_container {
-    padding-bottom: 20px;
-    border-top: #006480 solid 5px;
-    border-bottom: #006480 solid 5px;
-
-}
-
-.promo_headline_container {
-    padding: none;
-    margin: auto;
-}
-
 .try_this {
     color: orange;
-    font-size: 40px;
-    font-family: "ThirstyScriptMedium";
-    border-bottom: solid 1px #006480;
+    font-family: "Helvetica";
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     margin: auto;
     text-shadow:
             0px 1px 0 #000,
@@ -530,31 +516,22 @@ h1.hungry_headline.slide_left {
 
 .try_this span {
     font-family: "Merienda-Regular.ttf";
-    font-size: 55px;
+    font-size: 35px;
     padding-left: 3px;
 }
 
-.promotions_container h2 {
-    color: cadetblue;
-
-
+.facts_container {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 500px 200px;
 }
 
-.todays_snack{
-    text-align: center;
-    color: #006480;
-    text-shadow:
-           0px 1px 0 #000,
-            1px 2px 0 #000,
-          1px 1px 0 #000,
-          1px 1px 0 #000,
-           1px 1px 0 #000;
-    padding-top: 30px;
+.promotions_container h4 {
+    color: black;
 }
 
 .product_input {
     text-align: center;
-    color: orange;
     text-shadow:
            0px 1px 0 #000,
             1px 2px 0 #000,
@@ -563,17 +540,12 @@ h1.hungry_headline.slide_left {
            1px 1px 0 #000;
 }
 
-.promotion_image {
-    margin-top: 15px;
-}
-
 .promotion_description {
-    text-align: center;
+    text-align: left;
     font-size: 22px;
-    color: #006480;
+    color: black;
     padding-top: 30px;
     text-shadow: none;
-
 }
 
 
@@ -789,7 +761,7 @@ h1.hungry_headline.slide_left {
     text-shadow: none;
 }
 
-.contact_info p {
+p.contact_info {
     color: #006480;
     text-align: center;
     font-size: 20px;
