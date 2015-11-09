@@ -502,6 +502,7 @@ h1.hungry_headline.slide_left {
 
 .try_this {
     color: orange;
+    font-size: 20px;
     font-family: "Helvetica";
     text-align: center;
     padding: 5px;
@@ -524,10 +525,6 @@ h1.hungry_headline.slide_left {
     background-color: white;
     background-repeat: no-repeat;
     background-size: 500px 200px;
-}
-
-.promotions_container h4 {
-    color: black;
 }
 
 .product_input {
@@ -653,6 +650,25 @@ h1.hungry_headline.slide_left {
 .icon_container img {
     padding: 0;
     border: black 2px solid;
+}
+
+/* Owl carousel designs*/
+
+#owl-demo .item img{
+    text-align: center;
+    height: 200px;
+}
+
+#owl-demo{
+
+}
+
+.candy_fact{
+    text-shadow: none;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Merienda-Regular.ttf";
 }
 
 /* Begining designs for the Contact page */

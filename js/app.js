@@ -57,7 +57,7 @@ $(document).ready(function(){
 });
 
 // Google Map Function
-
+/*
 function plotMarkers(locations, map) {
     var previousMarker = null;
     var markers = [];
@@ -214,17 +214,21 @@ google.maps.event.addDomListener(window, 'load', initialize);
 // Stylized Overlay for Google Map (blue/ligh tint)
 
 [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#b4d4e1"},{"visibility":"on"}]}]
+*/
+$(document).ready(function() {
 
+  $("#owl-demo").owlCarousel({
 
-// Activate Carousel
-$("#myCarousel").carousel();
+      navigation: true, // Show next and prev buttons
+      slideSpeed: 200,
+      autoPlay: true,
+      stopOnHover: true,
+      paginationSpeed: 200,
+      singleItem:true,
+      rewindNav: true,
+      responsive: true,
+      transitionStyle: true
+  });
 
-// Enable Carousel Indicators
-$(".item").click(function(){
-    $("#myCarousel").carousel(1);
 });
 
-// Enable Carousel Controls
-$(".left").click(function(){
-    $("#myCarousel").carousel("prev");
-});
