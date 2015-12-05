@@ -1,257 +1,207 @@
-<!DOCTYPE html>
-<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
-<html class="no-js" lang="en" >
+{% extends "layouts/_base.html" %}
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Find Your Snack</title>
+{% load staticfiles %}
 
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/foundation.css">
-  <link rel="stylesheet" href="../owl.carousel/owl-carousel/owl.carousel.css">
-  <link rel="stylesheet" href="../owl.carousel/owl-carousel/owl.theme.css">
-  <link rel="stylesheet" href="../css/app.css">
-</head>
-<body>
-    <nav class="nav_bar large-12 columns centered">
-        <ul>
-            <li><a href="../index.html" class="home_button">Carnes Vending Co.</a></li>
-            <li><a href="../pages/who_we_are.html">Who We Are</a></li>
-            <li><a href="../pages/find_your_snack.html">Find Your Snack</a></li>
-            <li><a href="../pages/contact.html">Contact</a></li>
-            <li><a href="../pages/cash-free_mobile_app.html">Cash-Free Mobile App.</a></li>
-        </ul>
-    </nav>
-    <header class="banner banner_snack large-12 columns">
+{% block page_content %}
+  <header class="banner banner_snack large-12 columns">
+    <div class="row full-width">
+      <div class="large-6 columns large-offset-3 tagline_container">
+        <img class="tagline tagline_snack" src="{% static "images/banner_taglines/snack_tagline.png" %}">
+      </div>
+    </div>
+    <div class="large-7 columns large-offset-2 slide-right">
+      <h6 class="decisions">Decisions. Decisions. We're Here to help!</h6>
+    </div>
+
+  </header>
+  <div class="row full-width">
+    <div class="large-12 columns snack_app_container">
+
+      <div class="row full-width">
+        <div class="large-8 columns large-offset-2 instructions_container">
+          <div class="large-12 columns">
+            <h1 class="large-12 columns craving_headline">What Are You Craving<span>?</span></h1>
             <div class="row full-width">
-                <div class="large-6 columns large-offset-3 tagline_container">
-                    <img class="tagline tagline_snack" src="../images/banner_taglines/snack_tagline.png">
+              <ol>
+                <div class="row full-width">
+                  <li class="large-9 columns large-offset-3 number_1">
+                    <h3>Select Your Nearest Breakroom</h3>
+                  </li>
                 </div>
-            </div>
-            <div class="large-7 columns large-offset-2 slide-right">
-                <h6 class="decisions">Decisions. Decisions. We're Here to help!</h6>
-            </div>
+                <div class="row full-width">
+                  <div class="large-4 columns large-offset-3">
+                    <select class="snack_button locations_button">
+                      <option value="Buildings">All Breakrooms</option>
+                      <option value="Buildings"> Building: 1 Floor: 1 Room: 031</option>
+                      <option value="Buildings"> Building: 1 Floor: 1 Room: 041A</option>
+                      <option value="Buildings"> Building: 1 Floor: 1 Room: 041</option>
+                      <option value="Buildings"> Building: 1 Floor: 2 Room: 024</option>
+                      <option value="Buildings"> Building: 1 Floor: 2 Room: 029</option>
+                      <option value="Buildings"> Building: 1 Floor: 3 Room: 007</option>
+                      <option value="Buildings"> Building: 1 Floor: 3 Room: 053</option>
+                      <option value="Buildings"> Building: 2 Floor: 1 Room: 030</option>
+                      <option value="Buildings"> Building: 2 Floor: 2 Room: 017</option>
+                      <option value="Buildings"> Building: 2 Floor: 2 Room: 038</option>
+                      <option value="Buildings"> Building: 2 Floor: 3 Room: 029</option>
+                      <option value="Buildings"> Building: 2 Floor: 3 Room: 036</option>
+                      <option value="Buildings"> Building: 3 Floor: 1 Room: 076</option>
+                      <option value="Buildings"> Building: 3 Floor: 2 Room: 022</option>
+                      <option value="Buildings"> Building: 3 Floor: 2 Room: 037</option>
+                      <option value="Buildings"> Building: 3 Floor: 3 Room: 016</option>
+                      <option value="Buildings"> Building: 3 Floor: 3 Room: 023</option>
+                      <option value="Buildings"> Building: 4 Floor: 1 Room: 011</option>
+                      <option value="Buildings"> Building: 5 Floor: 1 Room: 023</option>
+                      <option value="Buildings"> Building: 5 Floor: 2 Room: 025</option>
 
-    </header>
-
-    <div class="row full-width">
-        <div class="large-12 columns snack_app_container">
-
-           <div class="row full-width">
-               <div class="large-8 columns large-offset-2 instructions_container">
-                   <div class="large-12 columns">
-                       <h1 class="large-12 columns craving_headline">What Are You Craving<span>?</span></h1>
-                    <div class="row full-width">
-                       <ol>
-                           <div class="row full-width">
-                                <li class="large-9 columns large-offset-3 number_1">
-                                    <h3>Select Your Nearest Breakroom</h3>
-                               </li>
-                           </div>
-                           <div class="row full-width">
-                            <div class="large-4 columns large-offset-3">
-                                <select class="snack_button locations_button">
-                                    <option value="Buildings">All Breakrooms</option>
-                                    <option value="Buildings"> Building: 1 Floor: 1 Room: 031</option>
-                                    <option value="Buildings"> Building: 1 Floor: 1 Room: 041A</option>
-                                    <option value="Buildings"> Building: 1 Floor: 1 Room: 041</option>
-                                    <option value="Buildings"> Building: 1 Floor: 2 Room: 024</option>
-                                    <option value="Buildings"> Building: 1 Floor: 2 Room: 029</option>
-                                    <option value="Buildings"> Building: 1 Floor: 3 Room: 007</option>
-                                    <option value="Buildings"> Building: 1 Floor: 3 Room: 053</option>
-                                    <option value="Buildings"> Building: 2 Floor: 1 Room: 030</option>
-                                    <option value="Buildings"> Building: 2 Floor: 2 Room: 017</option>
-                                    <option value="Buildings"> Building: 2 Floor: 2 Room: 038</option>
-                                    <option value="Buildings"> Building: 2 Floor: 3 Room: 029</option>
-                                    <option value="Buildings"> Building: 2 Floor: 3 Room: 036</option>
-                                    <option value="Buildings"> Building: 3 Floor: 1 Room: 076</option>
-                                    <option value="Buildings"> Building: 3 Floor: 2 Room: 022</option>
-                                    <option value="Buildings"> Building: 3 Floor: 2 Room: 037</option>
-                                    <option value="Buildings"> Building: 3 Floor: 3 Room: 016</option>
-                                    <option value="Buildings"> Building: 3 Floor: 3 Room: 023</option>
-                                    <option value="Buildings"> Building: 4 Floor: 1 Room: 011</option>
-                                    <option value="Buildings"> Building: 5 Floor: 1 Room: 023</option>
-                                    <option value="Buildings"> Building: 5 Floor: 2 Room: 025</option>
-
-                                </select>
-                            </div>
-                          </div>
-                           <div class="row">
-                                <li  class="large-9 large-offset-3 number_2">
-                                    <h3>Pick All Your Cravings</h3>
-                               </li>
-                           </div>
-                       </ol>
-                    </div>
-                       <div class="row full-width">
-                            <ul class="large-8 columns large-offset-2 icon_container">
-                                 <li>
-                                   <a href="#">
-                                   <img class="large-4 columns" src="../images/craving_icons/calorie_icon_color.png">
-                                   </a>
-                                </li>
-                               <li>
-                                   <a href="#">
-                                    <img class="large-4 columns" src="../images/craving_icons/crunchy_icon_color.png">
-                                    </a>
-                                </li>
-                                 <li>
-                                   <a href="#">
-                                    <img class="large-4 columns" src="../images/craving_icons/bubbles_icon_color.png">
-                                   </a>
-                                </li>
-                               <li>
-                                   <a href="#">
-                                    <img class="large-4 columns" src="../images/craving_icons/pastries_icon_color.png">
-                                   </a>
-                                </li>
-                                 <li>
-                                   <a href="#">
-                                    <img class="large-4 columns" src="../images/craving_icons/coffee_icon_color.png">
-                                   </a>
-                                </li>
-                                 <li>
-                                   <a href="#">
-                                     <img class="large-4 columns" src="../images/craving_icons/fill_icon_color.png">
-                                   </a>
-                                </li>
-                               <li>
-                                   <a href="#">
-                                   <img class="large-4 columns" src="../images/craving_icons/salty_icon_color.png">
-                                   </a>
-                                </li>
-                                  <li>
-                                   <a href="#">
-                                    <img class="large-4 columns" src="../images/craving_icons/chocolate_icon_color.png">
-                                   </a>
-                                </li>
-                                   <li>
-                                   <a href="#">
-                                   <img class="large-4 columns" src="../images/craving_icons/kid_icon_color.png">
-                                   </a>
-                                </li>
-                           </ul>
-                    </div>
-                    <div class="row full-width">
-                        <div class="large-6-columns">
-                            <a href="#" class="large-4 columns large-offset-4 button large snack_button">Find My Snack</a>
-                        </div>
-                    </div>
+                    </select>
+                  </div>
                 </div>
+                <div class="row">
+                  <li  class="large-9 large-offset-3 number_2">
+                    <h3>Pick All Your Cravings</h3>
+                  </li>
+                </div>
+              </ol>
             </div>
-        </div>
-    </div>
-     <div class="row full-width">
-        <div class="large-12 columns">
-            <div>
-                <h4 class="try_this">How Well Do You Know Your Treats<span>?</span></h4>
+            <div class="row full-width">
+              <ul class="large-8 columns large-offset-2 icon_container">
+                <li>
+                  <a href="#">
+                    <img class="large-4 columns" src="{% static "images/craving_icons/calorie_icon_color.png" %}">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img class="large-4 columns" src="{% static "images/craving_icons/crunchy_icon_color.png" %}">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img class="large-4 columns" src="{% static "images/craving_icons/bubbles_icon_color.png" %}">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img class="large-4 columns" src="{% static "images/craving_icons/pastries_icon_color.png" %}">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img class="large-4 columns" src="{% static "images/craving_icons/coffee_icon_color.png" %}">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img class="large-4 columns" src="{% static "images/craving_icons/fill_icon_color.png" %}">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img class="large-4 columns" src="{% static "images/craving_icons/salty_icon_color.png" %}">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img class="large-4 columns" src="{% static "images/craving_icons/chocolate_icon_color.png" %}">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img class="large-4 columns" src="{% static "images/craving_icons/kid_icon_color.png" %}">
+                  </a>
+                </li>
+              </ul>
             </div>
+            <div class="row full-width">
+              <div class="large-6-columns">
+                <a href="#" class="large-4 columns large-offset-4 button large snack_button">Find My Snack</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="row full-width">
-        <div class="carousel_container large-12 columns">
-            <div id="owl-demo" class="owl-carousel owl-theme">
-
-                <div class="row full-width">
-                  <div class="item large-10 columns large-offset-1">
-                      <div class="row full-width">
-                        <img class="large-6 columns" src="../images/candy/snickers_bar.jpg">
-                        <p class="candy_fact large-4 columns large-pull-1">Frank and Ethel Mars introduced the Snickers bar in 1929. They named it after their family’s horse!</p>
-                      </div>
-                  </div>
-                </div>
-
-                <div class="row full-width">
-                  <div class="item large-10 columns large-offset-1 ">
-                      <div class="row full-width">
-                        <img class="large-6 columns" src="../images/candy/chips.jpg">
-                        <p class="candy_fact large-4 columns large-pull-1">A one-ounce serving of Lay’s Classic potato chips has the same amount of sodium comparable to an average slice of white bread!</p>
-                      </div>
-                  </div>
-                </div>
-
-                <div class="row full-width">
-                  <div class="item large-10 columns large-offset-1">
-                      <div class="row full-width">
-                        <img class="large-6 columns" src="../images/candy/3musketeer.png">
-                        <p class="candy_fact large-5 columns large-pull-1">Originally in 1932, 3 Musketeers had three pieces per package: chocolate, strawberry and vanilla, hence the name. Rising costs and wartime restrictions on sugar, left only the more popular chocolate.</p>
-                      </div>
-                  </div>
-                </div>
-
-                <div class="row full-width">
-                  <div class="item large-10 columns large-offset-1">
-                      <div class="row full-width">
-                        <img class="large-5 columns" src="../images/candy/kitkat_unwrap.jpg">
-                        <p class="candy_fact large-5 columns large-pull-1 ">Every five minutes enough Kit Kat's are manufactured to outstack the Eiffel Tower, while every second, 418 Kit Kat fingers are consumed worldwide!
-                          </p>
-                      </div>
-                  </div>
-                </div>
-
-                <div class="row full-width">
-                  <div class="item large-10 columns large-offset-1">
-                      <div class="row full-width">
-                        <img class="large-6 columns" src="../images/candy/mms_brown.jpg">
-                        <p class="candy_fact large-5 columns large-pull-1">During the Second World War, M&amp;M’s were sold only to the military, which meant that the everyday chocolate-lover didn’t get to sample the glorious candy until the war ended in 1945.
-                          </p>
-                      </div>
-                  </div>
-                </div>
-
-                <div class="row full-width">
-                  <div class="item large-10 columns large-offset-1">
-                      <div class="row full-width">
-                        <img class="large-5 columns large-offset-1" src="../images/candy/cheetos.jpg">
-                        <p class="candy_fact large-5 columns large-pull-1">A single Cheeto, described as being in the shape of Michael Jackson doing the Moonwalk sold for $35.18 on eBay in 2009, attracting national media coverage in the U.S.
-                          </p>
-                      </div>
-                  </div>
-                </div>
-            </div>
+      <div class="large-12 columns">
+        <div>
+          <h4 class="try_this">How Well Do You Know Your Treats<span>?</span></h4>
         </div>
+      </div>
+    </div>
+    <div class="row full-width">
+      <div class="carousel_container large-12 columns">
+        <div id="owl-demo" class="owl-carousel owl-theme">
+
+          <div class="row full-width">
+            <div class="item large-10 columns large-offset-1">
+              <div class="row full-width">
+                <img class="large-6 columns" src="{% static "images/candy/snickers_bar.jpg" %}">
+                <p class="candy_fact large-4 columns large-pull-1">Frank and Ethel Mars introduced the Snickers bar in 1929. They named it after their family’s horse!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row full-width">
+            <div class="item large-10 columns large-offset-1 ">
+              <div class="row full-width">
+                <img class="large-6 columns" src="{% static "images/candy/chips.jpg" %}">
+                <p class="candy_fact large-4 columns large-pull-1">A one-ounce serving of Lay’s Classic potato chips has the same amount of sodium comparable to an average slice of white bread!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row full-width">
+            <div class="item large-10 columns large-offset-1">
+              <div class="row full-width">
+                <img class="large-6 columns" src="{% static "images/candy/3musketeer.png" %}">
+                <p class="candy_fact large-5 columns large-pull-1">Originally in 1932, 3 Musketeers had three pieces per package: chocolate, strawberry and vanilla, hence the name. Rising costs and wartime restrictions on sugar, left only the more popular chocolate.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row full-width">
+            <div class="item large-10 columns large-offset-1">
+              <div class="row full-width">
+                <img class="large-5 columns" src="{% static "images/candy/kitkat_unwrap.jpg" %}">
+                <p class="candy_fact large-5 columns large-pull-1 ">Every five minutes enough Kit Kat's are manufactured to outstack the Eiffel Tower, while every second, 418 Kit Kat fingers are consumed worldwide!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row full-width">
+            <div class="item large-10 columns large-offset-1">
+              <div class="row full-width">
+                <img class="large-6 columns" src="{% static "images/candy/mms_brown.jpg" %}">
+                <p class="candy_fact large-5 columns large-pull-1">During the Second World War, M&amp;M’s were sold only to the military, which meant that the everyday chocolate-lover didn’t get to sample the glorious candy until the war ended in 1945.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row full-width">
+            <div class="item large-10 columns large-offset-1">
+              <div class="row full-width">
+                <img class="large-5 columns large-offset-1" src="{% static "images/candy/cheetos.jpg" %}">
+                <p class="candy_fact large-5 columns large-pull-1">A single Cheeto, described as being in the shape of Michael Jackson doing the Moonwalk sold for $35.18 on eBay in 2009, attracting national media coverage in the U.S.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="row full-width">
-        <div class="large-12 columns payrange_ad_container">
-            <div class="large-6 large-offset-3 columns">
-                <h3>Try Out PayRange and Forget the Cash!</h3>
-            </div>
-            <div class="row">
-                <div class="large-12 columns">
-                    <a href="../pages/cash-free_mobile_app.html" class="button default large-4 columns large-offset-4 payrange_button_snack">See How It Works</a>
-                </div>
-            </div>
+      <div class="large-12 columns payrange_ad_container">
+        <div class="large-6 large-offset-3 columns">
+          <h3>Try Out PayRange and Forget the Cash!</h3>
         </div>
-     </div>
-  <footer>
-    <div class="row full-width">
-        <div class="footer_container">
-            <div  class="large-12 columns bottom_nav_container">
-               <nav class="large-8 large-offset-2 columns centered bottom_nav">
-                    <ul>
-                        <li><a href="../index.html"> Carnes Vending Co.  /</a></li>
-                        <li><a href="../pages/who_we_are.html"> Who We Are  /</a></li>
-                        <li><a href="../pages/find_your_snack.html"> Find Your Snack  /</a></li>
-                        <li><a href="../pages/contact.html"> Contact  /</a></li>
-                        <li><a href="../pages/cash-free_mobile_app.html"> Cash-Free Mobile App. /</a></li>
-                    </ul>
-                </nav>
-            </div>
-        <div class="row full-width">
-            <div class="large-12 columns">
-                <div class="large-4 large-offset-4 columns rights">
-                    <p>All Rights Reserved @ 2015 Daydreaming of Design </p>
-                </div>
-            </div>
+        <div class="row">
+          <div class="large-12 columns">
+            <a href="../pages/cash-free_mobile_app.html" class="button default large-4 columns large-offset-4 payrange_button_snack">See How It Works</a>
+          </div>
         </div>
+      </div>
     </div>
-</footer>
-</div>
- <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
- <script src="../owl.carousel/owl-carousel/owl.carousel.js"></script>
- <script src="../js/app.js"></script>
-
-</body>
-</html>
+{% endblock %}
