@@ -231,6 +231,7 @@ div.headline_container p {
 .snack_container {
     background-color: #fef2df;
     border-top: #006480 solid 5px;
+    overflow: hidden;
 
 }
 
@@ -654,12 +655,11 @@ h1.hungry_headline.slide_left {
 
 /* Owl carousel designs*/
 .carousel_container{
-     background-color: rgba(250,250,300,0.8);
+     background-color: white;
      border-bottom: #006480 solid 4px;
 }
 
 .item{
-    background-color: white;
     padding: 0;
     height: 300px;
 }
